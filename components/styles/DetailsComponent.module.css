@@ -1,0 +1,123 @@
+.detailsCard {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.detailsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.detailsHeader h2 {
+  color: var(--primary-color);
+  font-size: 1.75rem;
+}
+
+.priceTag {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+}
+
+.detailsBody {
+  flex: 1;
+}
+
+.detailRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background-color: var(--light-gray);
+  border-radius: var(--border-radius);
+}
+
+.detailLabel {
+  font-weight: 500;
+  color: var(--gray-color);
+}
+
+.detailValue {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stockIndicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.stockIndicator.inStock {
+  background-color: #2ecc71;
+}
+
+.stockIndicator.lowStock {
+  background-color: #f39c12;
+}
+
+.stockIndicator.outOfStock {
+  background-color: #e74c3c;
+}
+
+.description {
+  margin-top: 2rem;
+}
+
+.description h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.75rem;
+}
+
+.description p {
+  line-height: 1.7;
+  color: var(--dark-color);
+}
+
+.detailsFooter {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--light-gray);
+}
+
+.actionButton {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.actionButton {
+  background-color: var(--light-gray);
+  color: var(--dark-color);
+}
+
+.actionButton:hover {
+  background-color: #dee2e6;
+}
+
+.deleteButton {
+  background-color: #ffecec;
+  color: var(--danger-color);
+}
+
+.deleteButton:hover {
+  background-color: #ffd6d6;
+}
