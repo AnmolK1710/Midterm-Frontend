@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import ListComponent from '../components/ListComponent';
 import DetailsComponent from '../components/DetailsComponent';
-import FormComponent from '../components/FormComponent'; // ✅ Import the form
+import FormComponent from '../components/FormComponent'; 
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
   const [filter, setFilter] = useState('');
   const [categoryFilter, setCategoryFilter] = useState('all');
 
-  // ✅ Add new item to the list
+  
   const handleAddItem = (newItem) => {
     setItems([...items, newItem]);
   };
@@ -50,7 +50,7 @@ export default function Home() {
         <p className={styles.subtitle}>CPAN 144 - Midterm Practical Exam</p>
       </header>
 
-      {/* ✅ New: Form to add product */}
+      
       <FormComponent onAddItem={handleAddItem} />
 
       <div className={styles.filters}>
